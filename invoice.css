@@ -1,0 +1,95 @@
+body {
+    background: #f7f7fa;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: #222;
+    padding: 40px 0;
+}
+.invoice-container {
+    background: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 32px 28px 20px 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px #0001;
+}
+.restaurant-name {
+    text-align: center;
+    color: #ffbe57;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+.invoice-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    font-size: 1.05rem;
+}
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+    font-size: 1rem;
+}
+.invoice-table th, .invoice-table td {
+    border: 1px solid #eee;
+    padding: 8px 10px;
+    text-align: center;
+}
+.invoice-table th {
+    background: #ffbe5733;
+    color: #23272f;
+    font-weight: bold;
+}
+.invoice-table tfoot td {
+    font-weight: bold;
+    background: #fdf6e3;
+}
+.total-label {
+    text-align: right;
+}
+.total-value {
+    color: #ff7357;
+}
+.thank-you {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 1.14rem;
+    color: #32b87a;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.invoice-actions {
+    text-align: center;
+    margin-top: 18px;
+}
+.invoice-actions button {
+    background: #ffbe57;
+    color: #23272f;
+    border: none;
+    border-radius: 6px;
+    padding: 11px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: background 0.2s;
+}
+.invoice-actions button:hover {
+    background: #ffd488;
+}
+@media print {
+    body, html {
+        background: #fff;
+        padding: 0;
+    }
+    .invoice-container {
+        box-shadow: none;
+        margin: 0;
+        max-width: 100%;
+        border-radius: 0;
+    }
+    .invoice-actions {
+        display: none;
+    }
+}
