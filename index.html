@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CosyPOS - Restaurant POS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="pos-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">CosyPOS</div>
+            <nav>
+                <ul>
+                    <li class="nav-menu active" data-section="menu">Menu</li>
+                    <li class="nav-reservation" data-section="reservation">Reservation</li>
+                    <li class="nav-table-services" data-section="table_services">Table Services</li>
+                    <li class="nav-reports" data-section="reports">Reports</li>
+                    <li class="nav-settings" data-section="settings">Settings</li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Main dynamic content -->
+        <main class="main-content" id="main-content">
+            <!-- Content loaded by JS -->
+        </main>
+        <!-- Order panel, always visible on right (for Menu/Table Services) -->
+        <section class="order-panel" id="order-panel">
+            <!-- Order summary loaded by JS -->
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
